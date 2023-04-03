@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>First Newton's Law Calculator</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<script src="newton.js"></script>
+</head>
+<body>
+	<header>
+		<h1>First Newton's Law Calculator (for force)</h1>
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="help.html">Help</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<main>
+		<section>
+			<h2>Calculate Force</h2>
+			<p>Enter the values for mass and acceleration to calculate the force using Newton's law of motion:</p>
+			<form>
+				<label for="mass">Mass (kg):</label>
+				<input type="number" id="mass" name="mass" required><br><br>
+				<label for="acceleration">Acceleration (m/s^2):</label>
+				<input type="number" id="acceleration" name="acceleration" required><br><br>
+				<label for="force">Force (N):</label>
+				<input type="text" id="force" name="force"><br><br>
+				<input type="button" value="Calculate" onclick="calculateForce()">
+			</form>
+			<p id="result"></p>
+			<button onclick="checkCalculation()">Check Calculation</button>
+            <img src="isaac_newton.jpg" alt="Placeholder Image">
+		</section>
+	</main>
+</body>
+</html>
